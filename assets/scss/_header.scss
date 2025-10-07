@@ -1,0 +1,21 @@
+.header {
+  padding-top: 62px;
+  ul {
+    gap: 30px;
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  &_buttons {
+    gap: 16px;
+    .button {
+      margin-right: 4px;
+    }
+  }
+}
