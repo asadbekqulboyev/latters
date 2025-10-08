@@ -31,6 +31,16 @@
   font-style: normal;
 }
 @import "header";
+@import "hero";
+@import "dzen";
+@import "clients";
+@import "form";
+@import "intro";
+@import "seo";
+@import "business";
+@import "works";
+@import "faq";
+@import "footer";
 body {
   background: #fff;
   color: #6e6e6e;
@@ -67,6 +77,10 @@ body {
     flex-direction: column;
   }
 
+  &.row {
+    flex-direction: row;
+  }
+
   &.a_center {
     align-items: center;
   }
@@ -97,5 +111,67 @@ body {
   outline: none;
   span {
     color: #fff;
+  }
+}
+.section_title {
+  color: #020202;
+  text-align: center;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+  span {
+    color: #fa3600;
+  }
+}
+.subtitle {
+  color: #adadad;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+.custom_checkbox {
+  position: relative;
+  align-items: center;
+  cursor: pointer;
+
+  input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .checkmark {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #9a9a9a;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    transition: all 0.2s ease;
+    background: transparent;
+
+    svg {
+      opacity: 0;
+      transform: scale(0.7);
+      transition: all 0.2s ease;
+    }
+  }
+
+  input:checked + .checkmark {
+    background: transparent;
+    border-color: #9a9a9a;
+
+    svg {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  &:hover .checkmark {
+    border-color: #bcbcbc;
   }
 }

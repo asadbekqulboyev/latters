@@ -1,0 +1,45 @@
+.works {
+  padding-top: 96px;
+  &_steps {
+    margin-top: 51px;
+  }
+  &_step {
+    padding: 24px 18px 32px 30px;
+    border: 1px solid #cdcdc4;
+    width: 25%;
+    &:nth-child(1) {
+      border-radius: 16px 0 0 16px;
+    }
+    &:nth-child(4) {
+      border-radius: 0 16px 16px 0;
+    }
+    &_top {
+      color: #fa3600;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 45px;
+    }
+    &_title {
+      color: #222;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      min-height: 70px;
+    }
+    &_text {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    p {
+      color: #848484;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.hero {
+  padding-top: 70px;
+  &_title {
+    color: #020202;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    span {
+      color: #fa3600;
+    }
+  }
+  &__text {
+    margin-bottom: 50px;
+  }
+  &_left {
+    width: calc(80% - 50px);
+    p {
+      margin-top: 50px;
+    }
+    .button {
+      width: fit-content;
+      margin-top: 55px;
+    }
+  }
+
+  &_bottom {
+    color: #a6a4a0;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 45px;
+    margin-top: 55px;
+  }
+  &_img {
+    width: calc(20% - 50px);
+  }
+}

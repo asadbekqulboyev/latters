@@ -1,0 +1,38 @@
+.clients {
+  padding-top: 50px;
+  &_top {
+  }
+  &_items {
+    margin-top: 22px;
+    border-radius: 16px;
+    border: 1px solid #e0e0e0;
+    overflow: hidden;
+  }
+  &_item {
+    width: 25%;
+    min-height: 156px;
+    padding: 27px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border-bottom: 1px solid #e0e0e0;
+    border-left: 1px solid #e0e0e0;
+
+    &_img {
+      max-height: 52px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    p {
+      color: #888588;
+      text-align: center;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 18px;
+    }
+    
+  }
+}

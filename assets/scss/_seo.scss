@@ -1,0 +1,35 @@
+.seo {
+  padding: 97px 0 0;
+  &_top {
+    color: #000;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 600;
+    gap: 60px;
+    line-height: normal;
+  }
+  &_subtitle {
+    color: #000;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 60px;
+    margin-top: 60px;
+    span {
+      color: #fa3600;
+    }
+  }
+  &_texts {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    color: #6e6e6e;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin-top: 34px;
+  }
+}
