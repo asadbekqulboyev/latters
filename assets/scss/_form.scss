@@ -67,9 +67,15 @@
   }
   &.white {
     margin-top: 120px;
-
+    padding-bottom: 87px;
     .form_content {
       padding: 0;
+      position: relative;
+      .form_img {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
       label {
         display: flex;
         flex-direction: column;
@@ -144,6 +150,10 @@
       .form_content_checked {
         flex-direction: row;
       }
+    }
+    .form_inputs {
+      gap: 21px;
+      position: relative;
     }
   }
 }
