@@ -15,6 +15,20 @@
       color: #f0f0f0;
     }
   }
+  .button {
+    border-radius: 5px;
+    background: #fff;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    max-width: 245px;
+    text-align: center;
+    width: 100%;
+    margin-top: 38px;
+    justify-content: center;
+  }
   &_content {
     color: #8f8d90;
     text-align: center;
@@ -22,6 +36,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    margin-top: 32px;
     span {
       color: #20ae44;
     }
