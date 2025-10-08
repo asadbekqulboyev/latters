@@ -1,5 +1,10 @@
 .header {
   padding-top: 62px;
+  transition: all 0.5s linear;
+  background: #fff;
+  &_logo {
+    gap: 30px;
+  }
   ul {
     gap: 30px;
     list-style: none;
@@ -16,6 +21,21 @@
     gap: 16px;
     .button {
       margin-right: 4px;
+    }
+  }
+  &.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background: #fff;
+    padding: 22px 0;
+    border: 1px solid #dbdbdb;
+    background: #fff;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    .header_logo img:last-child{
+      display: none;
     }
   }
 }

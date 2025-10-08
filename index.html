@@ -12,19 +12,21 @@
     <div class="wrapper">
         <!-- header -->
         <header class="header">
-            <div class="container flex between a_center">
-                <a href="#" class="header_logo">
+            <div class="container flex between a_start">
+                <a href="#" class="header_logo flex column">
+
                     <img src="assets/images/logo.svg" alt="">
+                    <img src="assets/images/laters_sublogo.svg" alt="">
                 </a>
                 <ul class="header_links flex a_center">
-                    <li><a href="#">Кейсы</a></li>
-                    <li><a href="#">Наша система</a></li>
-                    <li><a href="#">Как мы работаем</a></li>
-                    <li><a href="#">Вопросы и ответы</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#dzen">Кейсы</a></li>
+                    <li><a href="#seo">Наша система</a></li>
+                    <li><a href="#works">Как мы работаем</a></li>
+                    <li><a href="#faq">Вопросы и ответы</a></li>
+                    <li><a href="#footer">Контакты</a></li>
                 </ul>
                 <div class="header_buttons flex a_center">
-                    <a href="#" class="button flex a_center">
+                    <a href="#form" class="button flex a_center">
                         <img src="assets/images/sms.svg" alt="">
                         <span>Оставить заявку</span>
                     </a>
@@ -51,7 +53,7 @@
                             и инструменты искусственного интеллекта, благодаря чему получаем невероятные результаты для
                             наших клиентов.
                         </p>
-                        <a href="#" class="button flex a_center">
+                        <a href="#dzen" class="button flex a_center">
                             <img src="assets/images/arrow_dow.svg" alt="">
                             <span>Смотреть кейсы</span>
                         </a>
@@ -65,7 +67,7 @@
                     </div>
                 </div>
             </section>
-            <section class="dzen">
+            <section class="dzen" id="dzen">
                 <div class="container">
                     <div class="dzen_top">
                         <h2 class="section_title">Строим систему привлечения <br> клиентов <span>из Дзена</span></h2>
@@ -298,7 +300,7 @@
                     </div>
                 </div>
             </section>
-            <section class="seo">
+            <section class="seo" id="seo">
                 <div class="container">
                     <div class="seo_top flex a_center center">
                         <span>SEO</span>
@@ -321,7 +323,6 @@
             </section>
             <section class="business">
                 <div class="container">
-                    <div class="gradieng"></div>
                     <div class="section_title">
                         Для каких сфер бизнеса <span> подходит продвижение в Дзене</span>
                     </div>
@@ -353,7 +354,7 @@
                     </div>
                 </div>
             </section>
-            <section class="works">
+            <section class="works" id="works">
                 <div class="container">
                     <h2 class="section_title">Как мы работаем?</h2>
                     <div class="works_steps flex ">
@@ -424,7 +425,7 @@
                                 <div class="works_step_number">
                                     04
                                 </div>
-                                <img src="assets/images/steps_icon.svg" alt="">
+                                <img src="assets/images/last_step_icon.svg" alt="">
 
                             </div>
                             <div class="works_info">
@@ -442,7 +443,7 @@
                     </div>
                 </div>
             </section>
-            <section class="form white">
+            <section class="form white" id="form">
                 <div class="container">
                     <div class="form_content">
                         <img src="assets/images/formwhite_img.png" alt="" class="form_img">
@@ -485,7 +486,7 @@
                     </div>
                 </div>
             </section>
-            <section class="faq">
+            <section class="faq" id="faq">
                 <div class="container">
                     <h2 class="section_title">Вопросы и ответы</h2>
                     <div class="faq_items flex column">
@@ -581,9 +582,9 @@
             </section>
 
         </main>
-        <footer class="footer">
+        <footer class="footer" id="footer">
             <div class="container">
-                <div class="footer_top flex a_center center
+                <div class="footer_top flex a_center between
                 ">
                     <img src="assets/images/footer_star.svg" alt="">
                     <h2 class="footer_title">Канал на Дзене это <br> долгосрочный маркетинговый <br> актив, генерирующий
@@ -597,13 +598,48 @@
                     <a href="#" class="button flex a_center">
                         Оставить заявку
                     </a>
+                    <img src="assets/images/smla_star.svg" alt="">
                 </div>
-                <div class="footer_bottom flex a_center center">
-                    <a href="#" class="footer_logo" >
+                <div class="footer_bottom flex  between">
+                    <a href="#" class="footer_logo">
                         <img src="assets/images/footer_logo.svg" alt="">
                     </a>
-                    <div class="footer_bottom_items">
-
+                    <div class="footer_bottom_items flex">
+                        <div class="footer_bottom_item">
+                            <p>Letters Media, 2025. Все права защищены. <br>
+                                <a href="#"> Политика обработки персональных данных</a>
+                            </p>
+                            <ul class="footer_social flex column">
+                                <li><a href="#">
+                                        <img src="assets/images/telegram_footer.svg" alt="">
+                                        <span>Написать в Telegram</span>
+                                    </a></li>
+                                <li><a href="#">
+                                        <img src="assets/images/telegram_footer2.svg" alt="">
+                                        <span>Написать в Whatsapp</span>
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_bottom_item">
+                            <div>
+                                <p>Адрес офиса.</p>
+                                <p>Россия, Московская область, Реутов, </p>
+                                <p>улица Победы, 7</p>
+                            </div>
+                            <ul class="footer_contacts">
+                                <li><a href="mailto:hello@lettersmedia.ru">hello@lettersmedia.ru</a></li>
+                                <li><a href="tel:+79161426011">+7 916 142 60 11</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_bottom_item">
+                            <p class="first">ИП Степыгин А.А.</p>
+                            <div>
+                                <p>140074, Россия, Москвоская область, </p>
+                                <p>г. Люберцы, ул. Преображенская 3, 111</p>
+                                <p>ИНН 860221500587</p>
+                                <p>ОГРНИП 325508100363022</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

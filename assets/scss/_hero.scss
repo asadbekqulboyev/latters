@@ -21,9 +21,28 @@
     .button {
       width: fit-content;
       margin-top: 55px;
+      align-items: flex-start !important;
+      img {
+        top: -4px;
+        position: relative;
+        animation: arrow_move 1.5s ease-in-out infinite;
+      }
     }
   }
-
+  @keyframes arrow_move {
+    0% {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
+    50% {
+      transform: translate(-50%, 3px);
+      opacity: 0.6;
+    }
+    100% {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
+  }
   &_bottom {
     color: #a6a4a0;
     font-size: 13px;

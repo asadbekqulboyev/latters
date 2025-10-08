@@ -9,8 +9,13 @@
     width: 25%;
     &:nth-child(1) {
       border-radius: 16px 0 0 16px;
+      border-right: 0;
+    }
+    &:nth-child(2   ) {
+      border-right: 0;
     }
     &:nth-child(4) {
+      border-left: 0;
       border-radius: 0 16px 16px 0;
     }
     &_top {
