@@ -31,11 +31,15 @@
     border-radius: 16px;
     background: #f2f0f3;
     transition: all 0.5s linear;
+
     p {
       margin-top: 25px;
       color: #000;
       font-weight: 500;
     }
+  }
+  .minus {
+    display: none;
   }
   &_content {
     height: 0;
@@ -57,7 +61,12 @@
     }
     .faq_header {
       span {
-        transform: rotate(45deg);
+        &.plus {
+          display: none;
+        }
+        &.minus {
+          display: block;
+        }
       }
     }
   }

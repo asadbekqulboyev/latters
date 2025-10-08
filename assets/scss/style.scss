@@ -54,6 +54,10 @@ body {
 .container {
   max-width: 1152px;
   margin: 0 auto;
+  padding: 0 15px;
+}
+.wrapper {
+  overflow: hidden;
 }
 .flex {
   display: flex;
@@ -110,6 +114,10 @@ body {
   text-decoration: none;
   cursor: pointer;
   outline: none;
+  transition: all 0.2s linear;
+  &:hover {
+    transform: scale(1.09);
+  }
   span {
     color: #fff;
   }
@@ -124,6 +132,18 @@ body {
   span {
     color: #fa3600;
   }
+  @media (max-width: 992px) {
+    font-size: 45px;
+    line-height: normal;
+  }
+  @media (max-width: 768px) {
+    font-size: 36px;
+    line-height: normal;
+  }
+  @media (max-width: 556px) {
+    font-size: 22px;
+    line-height: normal;
+  }
 }
 .subtitle {
   color: #adadad;
@@ -132,6 +152,9 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: 30px;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 .custom_checkbox {
   position: relative;

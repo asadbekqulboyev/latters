@@ -9,6 +9,11 @@ document.addEventListener("DOMContentLoaded", function () {
   //     placeholder: "_",
   //   }).mask(phoneInput);
   //
+  document.querySelector(".header_burger").onclick = function () {
+    this.classList.toggle("active");
+    document.querySelector(".header_mobile").classList.toggle("active");
+  };
+
   const faqItems = document.querySelectorAll(".faq_item");
 
   faqItems.forEach((item) => {

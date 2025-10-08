@@ -1,25 +1,57 @@
 .dzen {
   padding-top: 107px;
+  @media (max-width: 992px) {
+    padding-top: 70px;
+  }
+  @media (max-width: 768px) {
+    padding-top: 60px;
+  }
+  @media (max-width: 556px) {
+    padding-top: 40px;
+  }
   &_top {
     .subtitle {
       margin-top: 25px;
+      @media (max-width: 768px) {
+        margin-top: 15px;
+        line-height: normal;
+      }
     }
   }
   &_items {
     margin-top: 42px;
     gap: 37px 0;
+    @media (max-width: 768px) {
+      gap: 20px 0;
+    }
   }
   &_item {
     width: calc(50% - 24px);
     border-radius: 16px;
     border: 1px solid #e0e0e0;
+    @media (max-width: 992px) {
+      width: calc(50% - 14px);
+    }
+    @media (max-width: 768px) {
+      width: 100%;
+    }
     &_top {
       padding: 30px 50px 37px;
       border-radius: 16px;
       background: #f1f1f1;
+      @media (max-width: 992px) {
+        padding: 30px;
+      }
       img {
         height: 100%;
         min-height: 398px;
+        @media (max-width: 992px) {
+          min-height: auto;
+          height: 246px;
+        }
+        @media (max-width: 768px) {
+          height: auto;
+        }
       }
     }
     &_title {
@@ -29,6 +61,11 @@
       font-weight: 600;
       line-height: 35px;
       margin-bottom: 30px;
+      @media (max-width: 992px) {
+        font-size: 20px;
+        line-height: normal;
+      }
+
       span {
         color: #fa3600;
       }
@@ -41,12 +78,22 @@
     }
     &_info {
       padding: 30px 0 37px 50px;
+      @media (max-width: 992px) {
+        padding: 20px;
+      }
+      @media (max-width: 768px) {
+        padding: 18px;
+      }
       &_title {
         color: #000;
         font-size: 25px;
         font-style: normal;
         font-weight: 600;
         line-height: 35px;
+        @media (max-width: 992px) {
+          font-size: 18px;
+          line-height: normal;
+        }
       }
       a {
         color: #000;
@@ -62,6 +109,16 @@
         text-decoration: none;
         margin-top: 19px;
         align-items: center;
+        @media (max-width: 992px) {
+          font-size: 13px;
+          gap: 6px;
+        }
+        @media (max-width: 768px) {
+          font-size: 11px;
+          font-weight: 500;
+          gap: 5px;
+          line-height: normal;
+        }
       }
 
       p {
@@ -70,6 +127,11 @@
         font-style: normal;
         font-weight: 700;
         line-height: 24px;
+        @media (max-width: 768px) {
+          font-size: 14px;
+          font-weight: 600;
+          line-height: 19px;
+        }
       }
     }
     &_bottom {
