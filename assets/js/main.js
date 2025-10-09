@@ -49,3 +49,61 @@ window.addEventListener("scroll", function () {
     header.classList.remove("active");
   }
 });
+
+document.querySelectorAll(".business_items").forEach((list, index) => {
+  // Elementlarni ikki baravar ko‘paytiramiz
+  const clone = list.cloneNode(true);
+  list.append(...clone.childNodes);
+
+  // 1 va 3 qatorlar o‘ngga, 2 va 4 chapga
+  const isRight = index % 2 === 0;
+
+  let position = isRight ? -list.scrollWidth / 4 : 0;
+  // o‘ngga ketadiganlar uchun boshlanish pozitsiyasi biroz orqaga
+
+  const speed = 0.3; // tezlik sozlanadi
+
+  requestAnimationFrame(() => {
+    const resetPoint = list.scrollWidth / 2;
+
+    function animate() {
+      position += isRight ? speed : -speed;
+      list.style.transform = `translateX(${position}px)`;
+
+      // Reset shartlari (o‘ng/chap tomonga qarab)
+      if (isRight && position >= 0) position = -resetPoint / 2;
+      if (!isRight && Math.abs(position) >= resetPoint / 2) position = 0;
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  });
+});
+
+const modal = document.querySelector(".modal");
+const openModals = document.querySelectorAll(".open_modal"); // barcha tugmalar
+const closeModal = document.querySelector(".modal_exit");
+
+// Har bir tugmaga event qo‘shamiz
+openModals.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+    modal.classList.add("show");
+    document.body.style.overflow = "hidden"; // body scrollni bloklaymiz
+  });
+});
+
+// Modalni yopish tugmasi
+closeModal.addEventListener("click", () => {
+  modal.classList.remove("show");
+  document.body.style.overflow = ""; // scrollni tiklaymiz
+});
+
+// Fonga bosilganda yopish
+modal.addEventListener("click", (e) => {
+  if (e.target === modal) {
+    modal.classList.remove("show");
+    document.body.style.overflow = "";
+  }
+});

@@ -68,6 +68,11 @@
         outline: 0;
       }
       p {
+        color: #a4a4a4;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
         @media (max-width: 768px) {
           font-size: 16px;
           line-height: normal;
@@ -187,6 +192,11 @@
           color: inherit;
         }
         p {
+          color: #a4a4a4;
+          font-size: 11px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
           @media (max-width: 768px) {
             font-size: 16px;
           }
@@ -239,6 +249,13 @@
         @media (max-width: 992px) {
           margin-top: 20px;
           align-items: center !important;
+        }
+        p {
+          color: #848484;
+          font-size: 11px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
         }
       }
     }

@@ -9,9 +9,15 @@
   @media (max-width: 1024px) {
     padding-top: 32px;
   }
+  @media (max-width: 992px) {
+    padding: 15px 0;
+  }
   .container {
     @media (max-width: 1024px) {
       align-items: center !important  ;
+    }
+    @media (max-width: 992px) {
+      gap: 16px;
     }
   }
   &_logo {
@@ -22,6 +28,7 @@
       }
     }
     img {
+      transition: all 0.3s linear;
       @media (max-width: 1024px) {
         max-width: 120px;
       }
@@ -32,6 +39,7 @@
     list-style: none;
     padding-top: 14px;
     transition: all 0.3s linear;
+
     @media (max-width: 1080px) {
       gap: 16px;
     }
@@ -51,10 +59,16 @@
       position: absolute;
       background: #fff;
       right: -100%;
+      padding: 15px 0;
     }
     transition: all 0.3s linear;
     &.active {
       right: 0;
+    }
+    .header_buttons {
+      @media (max-width: 992px) {
+        width: 100%;
+      }
     }
   }
   .desctop {
@@ -121,8 +135,8 @@
       padding-top: 0;
     }
     @media (max-width: 992px) {
-      margin-top: 24px;
-      flex-direction: column-reverse !important;
+      margin-left: auto;
+      gap: 16px;
     }
     .button {
       margin-right: 4px;
@@ -150,8 +164,14 @@
     border: 1px solid #dbdbdb;
     background: #fff;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    @media (max-width: 992px) {
+      padding: 15px 0;
+    }
     .header_logo img:last-child {
       display: none;
+    }
+    .header_logo img {
+      width: 101px;
     }
     ul {
       padding-top: 0;
@@ -161,6 +181,16 @@
     }
     .container {
       align-items: center;
+      gap: 40px;
+      @media (max-width: 992px) {
+        gap: 16px;
+      }
+    }
+    .header_links {
+      margin-left: auto;
+      @media (max-width: 992px) {
+        margin-left: 0;
+      }
     }
   }
 }

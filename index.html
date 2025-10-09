@@ -14,7 +14,6 @@
         <header class="header">
             <div class="container flex between a_start">
                 <a href="#" class="header_logo flex column">
-
                     <img src="assets/images/logo.svg" alt="">
                     <img src="assets/images/laters_sublogo.svg" alt="">
                 </a>
@@ -25,8 +24,8 @@
                     <li><a href="#faq">Вопросы и ответы</a></li>
                     <li><a href="#footer">Контакты</a></li>
                 </ul>
-                <div class="header_buttons flex a_center desctop">
-                    <a href="#form" class="button flex a_center">
+                <div class="header_buttons flex a_center ">
+                    <a href="#form" class="button flex a_center desctop">
                         <img src="assets/images/sms.svg" alt="">
                         <span>Оставить заявку</span>
                     </a>
@@ -34,7 +33,7 @@
                         <img src="assets/images/tel.svg" alt="">
                     </a>
                     <a href="#" class="flex a_center center">
-                        <img src="assets/images/telegram.png" alt="">
+                        <img src="assets/images/telegram.svg" alt="">
                     </a>
                 </div>
                 <div class="header_burger">
@@ -56,12 +55,7 @@
                         <img src="assets/images/sms.svg" alt="">
                         <span>Оставить заявку</span>
                     </a>
-                    <a href="#" class="flex a_center center">
-                        <img src="assets/images/tel.svg" alt="">
-                    </a>
-                    <a href="#" class="flex a_center center">
-                        <img src="assets/images/telegram.png" alt="">
-                    </a>
+
                 </div>
             </div>
         </header>
@@ -212,6 +206,7 @@
                         ">
                         <div class="clients_item">
                             <div class="clients_item_img">
+                                <img src="assets/images/clients.svg" alt="">
                             </div>
                             <p>Крупнейший российский сервис <br>
                                 ии-презентаций</p>
@@ -282,7 +277,7 @@
                                 <input type="text" name="telegram">
                             </label>
                             <label>
-                                <button>Оставить заявку</button>
+                                <button class="open_modal">Оставить заявку</button>
                             </label>
                         </div>
                         <label class="form_content_checked flex a_center row">
@@ -352,22 +347,48 @@
                     <div class="section_title">
                         Для каких сфер бизнеса <span> подходит продвижение в Дзене</span>
                     </div>
-                    <ul class="business_items flex wrap">
+                    <ul class="business_items flex">
                         <li><a href="#">Психология и саморазвитие</a></li>
                         <li><a href="#">Языковые школы</a></li>
                         <li><a href="#">Нейросети</a></li>
                         <li><a href="#">Консалтинг и бизнес-услуги</a></li>
                         <li><a href="#">Интерьер и ремонт</a></li>
+                        <li><a href="#">Психология и саморазвитие</a></li>
+                        <li><a href="#">Языковые школы</a></li>
+                        <li><a href="#">Нейросети</a></li>
+                        <li><a href="#">Консалтинг и бизнес-услуги</a></li>
+                        <li><a href="#">Интерьер и ремонт</a></li>
+                    </ul>
+                    <ul class="business_items flex">
                         <li><a href="#">Детское развитие</a></li>
                         <li><a href="#">Эзотерика</a></li>
                         <li><a href="#">Диетология и похудение</a></li>
                         <li><a href="#">Онлайн-курсы и обучение</a></li>
                         <li><a href="#">Пенсионные фонды</a></li>
+                        <li><a href="#">Детское развитие</a></li>
+                        <li><a href="#">Эзотерика</a></li>
+                        <li><a href="#">Диетология и похудение</a></li>
+                        <li><a href="#">Онлайн-курсы и обучение</a></li>
+                        <li><a href="#">Пенсионные фонды</a></li>
+                    </ul>
+                    <ul class="business_items flex">
                         <li><a href="#">Банкротство</a></li>
                         <li><a href="#">Косметология и уход за кожей</a></li>
                         <li><a href="#">Путешествия и туризм</a></li>
                         <li><a href="#">Юридические услуги</a></li>
                         <li><a href="#">Автотематика</a></li>
+                        <li><a href="#">Банкротство</a></li>
+                        <li><a href="#">Косметология и уход за кожей</a></li>
+                        <li><a href="#">Путешествия и туризм</a></li>
+                        <li><a href="#">Юридические услуги</a></li>
+                        <li><a href="#">Автотематика</a></li>
+                    </ul>
+                    <ul class="business_items flex">
+                        <li><a href="#">Ипотечные брокеры</a></li>
+                        <li><a href="#">Инвестиции</a></li>
+                        <li><a href="#">Франшизы</a></li>
+                        <li><a href="#">Финансовая грамотность</a></li>
+                        <li><a href="#">Психология и саморазвитие</a></li>
                         <li><a href="#">Ипотечные брокеры</a></li>
                         <li><a href="#">Инвестиции</a></li>
                         <li><a href="#">Франшизы</a></li>
@@ -489,7 +510,7 @@
                                 <input type="text" name="telegram">
                             </label>
                             <label>
-                                <button>Оставить заявку</button>
+                                <button type="submit" class="open_modal">Оставить заявку</button>
                             </label>
                         </div>
                         <label class="form_content_checked flex a_center row">
@@ -614,7 +635,6 @@
                     </div>
                 </div>
             </section>
-
         </main>
         <footer class="footer" id="footer">
             <div class="container">
@@ -678,6 +698,16 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div class="modal">
+        <div class="modal_content">
+            <div class="modal_exit"><img src="assets/images/modal_exit.svg" alt=""></div>
+            <div class="modal_check flex column a_center">
+                <img src="assets/images/check_icon.svg" alt="">
+            </div>
+            <div class="modal_title">Спасибо за заявку!</div>
+            <p>В ближайшее время мы с вами свяжемся!</p>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/inputmask/5.0.9/inputmask.min.js"></script>
     <script src="assets/js/main.js"></script>
