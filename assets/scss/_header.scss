@@ -145,8 +145,9 @@
     a:not(.button) {
       transition: all 0.2s linear;
       &:hover {
-        transform: scale(1.09);
+        filter: brightness(1.4);
       }
+
       img {
         @media (max-width: 1024px) {
           width: 36px;

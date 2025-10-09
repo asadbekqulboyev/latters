@@ -109,15 +109,17 @@ body {
   line-height: normal;
   gap: 14px;
   border-radius: 25px;
-  background: #000000bf;
+  background: #000;
   padding: 14px 22px;
   text-decoration: none;
   cursor: pointer;
   outline: none;
   transition: all 0.2s linear;
   &:hover {
-    background: #000;
+    background: #333;
+    filter: brightness(1.2);
   }
+
   span {
     color: #fff;
   }

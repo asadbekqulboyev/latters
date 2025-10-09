@@ -30,7 +30,7 @@
   .container {
     @media (max-width: 768px) {
       flex-direction: column-reverse;
-      gap: 24px;
+      gap: 10px;
     }
   }
   &_left {

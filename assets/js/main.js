@@ -61,7 +61,7 @@ document.querySelectorAll(".business_items").forEach((list, index) => {
   let position = isRight ? -list.scrollWidth / 4 : 0;
   // o‘ngga ketadiganlar uchun boshlanish pozitsiyasi biroz orqaga
 
-  const speed = 0.3; // tezlik sozlanadi
+  const speed = 0.14; // tezlik sozlanadi
 
   requestAnimationFrame(() => {
     const resetPoint = list.scrollWidth / 2;
