@@ -59,7 +59,7 @@
       position: absolute;
       background: #fff;
       right: -100%;
-      padding: 15px 0;
+      padding: 35px 0;
     }
     transition: all 0.3s linear;
     &.active {
@@ -68,6 +68,7 @@
     .header_buttons {
       @media (max-width: 992px) {
         width: 100%;
+        margin-top: 20px;
       }
     }
   }
