@@ -166,7 +166,6 @@
       }
       button {
         border-radius: 5px;
-        background: #000;
         padding: 10px 20px;
         color: #fff;
         font-size: 16px;
@@ -179,6 +178,11 @@
         display: block;
         cursor: pointer;
         height: 56px;
+        background: #000000dc;
+        transition: all 0.2s linear;
+        &:hover {
+          background: #000;
+        }
       }
 
       &_checked {
