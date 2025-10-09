@@ -94,10 +94,10 @@
       display: block;
       cursor: pointer;
       height: 56px;
-
       transition: all 0.2s linear;
+
       &:hover {
-        transform: scale(1.05);
+        background: #2bf15d;
       }
     }
 

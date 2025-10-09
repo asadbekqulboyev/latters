@@ -116,7 +116,7 @@ body {
   outline: none;
   transition: all 0.2s linear;
   &:hover {
-    transform: scale(1.09);
+    box-shadow: inset 0 0 9px #ffffff;
   }
   span {
     color: #fff;
@@ -241,7 +241,6 @@ body {
     font-weight: 600;
     line-height: 60px;
     margin-top: 18px;
-    
   }
   p {
     color: #888588;
