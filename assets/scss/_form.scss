@@ -1,6 +1,8 @@
 .form {
   margin-top: 45px;
-
+  @media (max-width: 768px) {
+    margin-top: 40px;
+  }
   &_title {
     color: #f0f0f0;
     text-align: center;
@@ -10,21 +12,51 @@
     line-height: 40px;
     max-width: 768px;
     margin: 0 auto;
+    @media (max-width: 992px) {
+      font-size: 32px;
+    }
+    @media (max-width: 768px) {
+      font-size: 20px;
+      line-height: normal;
+    }
   }
   &_content {
     border-radius: 16px;
     background: #2c2c2c;
     padding: 37px 59px 40px 50px;
+    @media (max-width: 768px) {
+      padding: 35px 25px;
+    }
+    .form_inputs {
+      @media (max-width: 992px) {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px 30px;
+      }
+      label {
+        @media (max-width: 992px) {
+          flex: 1 1 auto;
+          width: calc(50% - 40px);
+        }
+        @media (max-width: 768px) {
+          width: 100%;
+        }
+      }
+    }
     label {
       display: flex;
       flex-direction: column;
       flex: 1;
+
       span {
         color: #b0b0b0;
         font-size: 14px;
         font-style: normal;
         font-weight: 500;
         line-height: 45px;
+        @media (max-width: 768px) {
+          line-height: 24px;
+        }
       }
       input {
         height: 56px;
@@ -34,6 +66,12 @@
         border: 0;
         padding: 16px;
         outline: 0;
+      }
+      p {
+        @media (max-width: 768px) {
+          font-size: 16px;
+          line-height: normal;
+        }
       }
     }
     button {
@@ -73,6 +111,13 @@
   &.white {
     margin-top: 120px;
     padding-bottom: 87px;
+    @media (max-width: 992px) {
+      margin-top: 80px;
+    }
+    @media (max-width: 768px) {
+      margin-top: 40px;
+      padding-bottom: 40px;
+    }
     .form_content {
       padding: 0;
       position: relative;
@@ -80,6 +125,16 @@
         position: absolute;
         right: 0;
         top: 0;
+        @media (max-width: 1024px) {
+          width: 300px;
+        }
+        @media (max-width: 992px) {
+          width: 270px;
+        }
+        @media (max-width: 556px) {
+          width: 120px;
+          top: 60px;
+        }
       }
       label {
         display: flex;
@@ -124,8 +179,17 @@
       &_checked {
         gap: 14px;
         margin-top: 23px;
+        @media (max-width: 768px) {
+          font-size: 14px;
+          align-items: start !important;
+        }
         a {
           color: inherit;
+        }
+        p {
+          @media (max-width: 768px) {
+            font-size: 16px;
+          }
         }
       }
     }
@@ -137,8 +201,26 @@
       text-align: left;
       line-height: 60px;
       max-width: 100%;
+      @media (max-width: 992px) {
+        position: relative;
+        z-index: 2;
+        font-size: 42px;
+        line-height: normal;
+      }
+      @media (max-width: 768px) {
+        font-size: 32px;
+      }
+      @media (max-width: 556px) {
+        font-size: 26px;
+        line-height: normal;
+      }
       span {
         color: #fa3600;
+      }
+      br {
+        @media (max-width: 768px) {
+          display: none;
+        }
       }
     }
     .form_content {
@@ -154,11 +236,36 @@
       }
       .form_content_checked {
         flex-direction: row;
+        @media (max-width: 992px) {
+          margin-top: 20px;
+          align-items: center !important;
+        }
       }
     }
     .form_inputs {
-      gap: 21px;
+      gap: 20px;
       position: relative;
+      @media (max-width: 992px) {
+        flex-wrap: wrap;
+      }
+      @media (max-width: 556px) {
+        gap: 10px;
+      }
+      label {
+        @media (max-width: 992px) {
+          width: calc(50% - 10px);
+          flex: 1 1 auto;
+        }
+        @media (max-width: 556px) {
+          width: 100%;
+        }
+        span {
+          @media (max-width: 556px) {
+            font-size: 14px;
+            line-height: 26px;
+          }
+        }
+      }
     }
   }
 }

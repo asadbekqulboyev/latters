@@ -1,8 +1,16 @@
 .business {
   background: #1b1b1b;
-  padding: 106px;
+  padding: 106px 0 101px;
   margin-top: 100px;
   position: relative;
+  @media (max-width: 992px) {
+    margin-top: 30px;
+    padding: 56px 0 51px;
+  }
+  @media (max-width: 768px) {
+    margin-top: 30px;
+    padding: 30px 0 30px;
+  }
   .section_title {
     color: #fff;
     position: relative;
@@ -15,6 +23,18 @@
     gap: 17px 30px;
     list-style: none;
     margin-top: 84px;
+    @media (max-width: 992px) {
+      margin-top: 40px;
+      gap: 15px 20px;
+    }
+    @media (max-width: 768px) {
+      gap: 12px 17px;
+      margin-top: 30px;
+    }
+    @media (max-width: 556px) {
+      gap: 10px 15px;
+      margin-top: 20px;
+    }
     &::before {
       content: "";
       position: absolute;
@@ -31,6 +51,18 @@
         linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, transparent 40%),
         linear-gradient(to left, rgba(0, 0, 0, 1) 0%, transparent 40%),
         linear-gradient(to right, rgba(0, 0, 0, 1) 0%, transparent 40%);
+      @media (max-width: 556px) {
+        background: radial-gradient(
+            circle at center,
+            rgba(0, 0, 0, 0) 30%,
+            rgba(0, 0, 0, 0.1) 100%,
+            rgba(0, 0, 0, 0.1) 100%
+          ),
+          linear-gradient(to top, rgba(0, 0, 0, 1) 0%, transparent 40%),
+          linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, transparent 40%),
+          linear-gradient(to left, rgba(0, 0, 0, 1) 0%, transparent 40%),
+          linear-gradient(to right, rgba(0, 0, 0, 1) 0%, transparent 40%);
+      }
     }
 
     a {
@@ -47,9 +79,21 @@
       padding: 2px 25px;
       display: block;
       transition: all 0.2s linear;
+      @media (max-width: 768px) {
+        font-size: 13px;
+        padding: 2px 20px;
+        line-height: 36px;
+      }
+      @media (max-width: 556px) {
+        font-size: 12px;
+        line-height: 25px;
+        padding: 2px 15px;
+      }
       &:hover {
         color: #0b0b0b;
         background: #fff;
+        z-index: 22;
+        position: relative;
       }
     }
   }
@@ -65,6 +109,14 @@
     margin-top: 85px;
     position: relative;
     z-index: 5;
+    @media (max-width: 992px) {
+      margin-top: 40px;
+      font-size: 16px;
+    }
+    @media (max-width: 556px) {
+      margin-top: 20px;
+      font-size: 15px;
+    }
     span {
       color: #fff;
     }
