@@ -23,6 +23,7 @@
   &_logo {
     gap: 30px;
     img:last-child {
+      max-width: 100px;
       @media (max-width: 1024px) {
         display: none;
       }
